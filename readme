@@ -1,0 +1,17 @@
+https://www.reddit.com/r/C_Programming/comments/6j8250/why_dont_we_use_the_l_flag_to_link_standard/
+>>>> Why I don't need to LINK to standard library while compiling Hello World?
+
+https://www.cs.swarthmore.edu/~newhall/unixhelp/howto_C_libraries.html
+http://docencia.ac.upc.edu/FIB/USO/Bibliografia/unix-c-libraries.html
+>>>> Read these 2 very decent links about libraries in C
+
+https://stackoverflow.com/questions/27352260/where-does-stdio-o-live-in-linux-machine
+>>>> when building library, I had exactly the same question
+
+>>>>TODO: learn how to properly #include <bstrlib.h> and its lib file
+
+
+static int default_compare(void *a, void *b) {
+    return bstrcmp((bstring) a, (bstring) b);
+}
+>>>> wtf, why pointer a is casted to non-pointer type (or whatever it happens to be)
